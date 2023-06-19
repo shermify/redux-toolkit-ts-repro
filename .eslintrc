@@ -1,0 +1,87 @@
+{
+  "root": true,
+  "plugins": [
+    "react",
+    "@typescript-eslint",
+    "import",
+    "jsx-a11y",
+    "react-hooks",
+    "@emotion"
+  ],
+  "env": {
+    "browser": true,
+    "es2022": true,
+    "worker": true
+  },
+  "parser": "@typescript-eslint/parser",
+  "extends": [
+    "plugin:prettier/recommended",
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:import/typescript"
+  ],
+  "rules": {
+    "prettier/prettier": [ "error", { "singleQuote": true }, { "max-len": 100 } ],
+    "import/order": [
+      "error",
+      {
+        "pathGroups": [
+          {
+            "pattern": "react",
+            "group": "builtin",
+            "position": "before"
+          }
+        ],
+        "pathGroupsExcludedImportTypes": [ "react" ]
+      }
+    ]
+  },
+  "overrides": [ {
+      "files": [ "**/*.ts?(x)", "**/*.d.ts" ],
+      "rules": {
+        // TypeScript"s `noFallthroughCasesInSwitch` option is more robust (#6906)
+        "default-case": "off",
+        // "tsc" already handles this (https://github.com/typescript-eslint/typescript-eslint/issues/291)
+        "no-dupe-class-members": "off",
+        // "tsc" already handles this (https://github.com/typescript-eslint/typescript-eslint/issues/477)
+        "no-undef": "off",
+
+        // Add TypeScript specific rules (and turn off ESLint equivalents)
+        "@typescript-eslint/consistent-type-assertions": "error",
+        "no-array-constructor": "off",
+        "no-redeclare": "off",
+        "@typescript-eslint/no-redeclare": "error",
+        "no-use-before-define": "off",
+        "@typescript-eslint/no-use-before-define": [
+          "error",
+          {
+            "functions": false,
+            "classes": false,
+            "variables": false,
+            "typedefs": false
+          }
+        ],
+        "no-unused-expressions": "off",
+        "@typescript-eslint/no-unused-expressions": [
+          "error",
+          {
+            "allowShortCircuit": true,
+            "allowTernary": true,
+            "allowTaggedTemplates": true
+          }
+        ],
+        "no-unused-vars": "off",
+        "@typescript-eslint/no-unused-vars": [
+          "warn",
+          {
+            "args": "none",
+            "ignoreRestSiblings": true
+          }
+        ],
+        "no-useless-constructor": "off",
+        "@typescript-eslint/no-useless-constructor": "error",
+        "@typescript-eslint/no-var-requires": "off"
+      }
+    }
+  ]
+}

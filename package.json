@@ -1,0 +1,41 @@
+{
+  "name": "react-boilerplate",
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+    "start": "yarn webpack serve --config webpack/dev.config.js",
+    "vscode": "yarn dlx @yarnpkg/sdks vscode"
+  },
+  "sideEffects": false,
+  "type": "module",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "@emotion/eslint-plugin": "^11.11.0",
+    "@pmmmwh/react-refresh-webpack-plugin": "^0.5.10",
+    "@types/node": "^20.1.1",
+    "@types/react": "^18.2.6",
+    "@typescript-eslint/eslint-plugin": "^5.59.5",
+    "@typescript-eslint/parser": "^5.59.5",
+    "eslint": "^8.40.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-import-resolver-typescript": "^3.5.5",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-jsx-a11y": "^6.7.1",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "html-webpack-plugin": "^5.5.1",
+    "prettier": "^2.8.8",
+    "react-refresh": "^0.14.0",
+    "ts-loader": "^9.4.2",
+    "typescript": "5.1.0-beta",
+    "webpack": "^5.82.0",
+    "webpack-cli": "^5.1.0",
+    "webpack-dev-server": "^4.15.0",
+    "webpack-merge": "^5.8.0"
+  },
+  "packageManager": "yarn@4.0.0-rc.43"
+}
