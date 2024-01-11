@@ -7,7 +7,7 @@
     "vscode": "yarn dlx @yarnpkg/sdks vscode"
   },
   "sideEffects": false,
-  "type": "module",
+
   "private": true,
   "workspaces": [
     "packages/*"

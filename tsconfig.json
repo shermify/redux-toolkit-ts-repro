@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
     "rootDir": "packages",
+    "composite": true,
     "outDir": "dist",
     "target": "ES2022",
     "lib": [
@@ -8,17 +9,16 @@
       "WebWorker",
       "ES2022",
     ],
-    "noEmit": true,
+
     "isolatedModules": true,
     "alwaysStrict": true,
     "strict": true,
     "skipLibCheck": true,
     "module": "ES2022",
-    "moduleResolution": "nodenext",
+    "moduleResolution": "Bundler",
     "jsx": "react-jsx",
     "jsxImportSource": "@emotion/react",
     "noErrorTruncation": true,
-    "resolveJsonModule": true,
-    "allowImportingTsExtensions": true,
+    "resolveJsonModule": true
   }
 }

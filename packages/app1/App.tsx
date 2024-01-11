@@ -1,6 +1,6 @@
 import { Provider } from 'react-redux';
-import { Pokemon } from './Pokemon.tsx';
-import { store } from './store.ts';
+import { Pokemon } from './Pokemon';
+import { store } from './store';
 
 export const App = () => {
   return (

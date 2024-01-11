@@ -7,7 +7,6 @@
     "vscode": "yarn dlx @yarnpkg/sdks vscode"
   },
   "sideEffects": false,
-  "type": "module",
   "dependencies": {
     "@app/2": "workspace:^",
     "@emotion/react": "^11.11.3",

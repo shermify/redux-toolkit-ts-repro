@@ -10,7 +10,6 @@
     "./slice": "./slice.ts"
   },
   "sideEffects": false,
-  "type": "module",
   "dependencies": {
     "@reduxjs/toolkit": "^2.0.1",
     "@types/react": "^18.2.47",
