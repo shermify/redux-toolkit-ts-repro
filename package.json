@@ -2,16 +2,8 @@
   "name": "react-boilerplate",
   "version": "1.0.0",
   "license": "MIT",
-  "scripts": {
-    "start": "webpack serve --config webpack/dev.config.js",
-    "vscode": "yarn dlx @yarnpkg/sdks vscode"
-  },
   "sideEffects": false,
-  "private": true,
   "type": "module",
-  "workspaces": [
-    "packages/*"
-  ],
   "devDependencies": {
     "@emotion/eslint-plugin": "^11.11.0",
     "@pmmmwh/react-refresh-webpack-plugin": "^0.5.11",
@@ -31,11 +23,7 @@
     "prettier": "^3.1.1",
     "react-refresh": "^0.14.0",
     "ts-loader": "^9.5.1",
-    "typescript": "5.3.3",
-    "webpack": "^5.89.0",
-    "webpack-cli": "^5.1.4",
-    "webpack-dev-server": "^4.15.1",
-    "webpack-merge": "^5.10.0"
+    "typescript": "5.3.3"
   },
   "packageManager": "yarn@4.0.2"
 }
