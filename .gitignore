@@ -11,3 +11,4 @@
 **/stats
 .DS_Store
 *.tsbuildinfo
+node_modules

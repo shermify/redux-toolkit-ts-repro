@@ -3,11 +3,12 @@
   "version": "1.0.0",
   "license": "MIT",
   "scripts": {
-    "start": "yarn webpack serve --config webpack/dev.config.js",
+    "start": "webpack serve --config webpack/dev.config.js",
     "vscode": "yarn dlx @yarnpkg/sdks vscode"
   },
   "sideEffects": false,
   "private": true,
+  "type": "module",
   "workspaces": [
     "packages/*"
   ],
