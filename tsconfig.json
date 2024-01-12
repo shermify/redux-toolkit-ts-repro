@@ -1,6 +1,5 @@
 {
   "compilerOptions": {
-    "rootDir": "packages",
     "declaration": true,
     "outDir": "dist",
     "target": "ES2022",
